@@ -144,6 +144,7 @@ export class Tab2Page {
 
   ionViewWillEnter() {
     this.content.scrollToTop(300);
+    this.swiped(null);
   }
 
   ionViewDidEnter() {
