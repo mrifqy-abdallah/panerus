@@ -46,7 +46,7 @@ export class AuthenticationService {
   ifLoggedIn() {
     this.storage.get('USER_INFO').then((response) => {
       if (response === null) {
-        this.router.navigate(['landing'], {replaceUrl: true});
+        this.router.navigate(['landing'], {replaceUrl: true, skipLocationChange: true});
       } else {
         this.authState.next(true);
       }

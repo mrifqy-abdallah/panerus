@@ -35,18 +35,18 @@ export class Tab2Page {
 
   menu = [
     [
-      { title2: 'Tentang PKKMB', route: 'tabs/tentang', type: 'btn', custom: 'assets/icon/custom/pkkmb-1.svg'}
+      { title2: 'Tentang PKKMB', route: 'tab2/tentang', type: 'btn', custom: 'assets/icon/custom/pkkmb-1.svg'}
     ],
     [
-      { name: 'book', title: 'Panduan', route: 'tabs/panduan', type: 'btn' },
-      { name: 'globe', title: 'Website', route: 'tabs/web', type: 'btn' }
+      { name: 'book', title: 'Panduan', route: 'tab2/panduan', type: 'btn' },
+      { name: 'globe', title: 'Website', route: 'tab2/web', type: 'btn' }
     ],
     [
-      { name: 'clipboard', title2: 'Presensi', route: 'tabs/presensi', type: 'btn' }
+      { name: 'clipboard', title2: 'Presensi', route: 'tab2/presensi', type: 'btn' }
     ],
     [
-      { name: 'people', title: 'Grup', route: 'tabs/grup', type: 'btn' },
-      { name: 'bookmarks', title: 'Agenda', route: 'tabs/agenda', type: 'btn' },
+      { name: 'people', title: 'Grup', route: 'tab2/grup', type: 'btn' },
+      { name: 'bookmarks', title: 'Agenda', route: 'tab2/agenda', type: 'btn' },
       // tslint:disable-next-line: max-line-length
       { name: 'pin', title: 'Lokasi', route: 'https://www.google.com/maps/place/Universitas+Sebelas+Maret,+Jl.+Ir+Sutami+No.36+A,+Pucangsawit,+Kec.+Jebres,+Kota+Surakarta,+Jawa+Tengah+57126/@-7.5596031,110.8565448,17z/data=!4m2!3m1!1s0x2e7a14234667a3fd:0xbda63b32997616ad', type: 'lnk' }
     ]
