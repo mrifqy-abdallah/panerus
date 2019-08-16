@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title class="philosopher">Presensi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="roboto">
+  <ion-grid style="height: 100%" text-center>
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-col size-md="6">
+
+        <ion-card color="light">
+          <ion-card-content>
+            <p><b>Hasil scanning :</b></p>
+            <p>{{ scanResult }}</p>
+          </ion-card-content>
+        </ion-card>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  <ion-fab vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="scanCode()"><ion-icon name="camera"></ion-icon></ion-fab-button>
+  </ion-fab>
+</ion-content>

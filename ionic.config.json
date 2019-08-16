@@ -1,5 +1,7 @@
 {
   "name": "Panerusq",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }

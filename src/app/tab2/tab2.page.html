@@ -1,9 +1,81 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>
-      Tab Two
-    </ion-title>
+  <ion-toolbar size="large">
+    <ion-title id="ion-text-center" class="philosopher"><b>P A N E R U S</b></ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content [scrollEvents]="true" #content>
+  <ion-slides [options]="sliderConf" pager="true">
+    <ion-slide *ngFor="let mage of ads">
+      <ion-card>
+        <img src="{{ mage.LINK }}">
+      </ion-card>
+    </ion-slide>
+  </ion-slides>
+
+  <ion-grid no-padding>
+    <ion-row>
+      <ion-col size-lg="6" offset-lg="3">
+        <ion-card>
+          <ion-card-header no-padding padding-horizontal>
+            <ion-item lines="none" color=none>
+              <ion-thumbnail slot="end" margin-left margin-bottom>
+                <ion-avatar>
+                  <img src={{img}}>
+                </ion-avatar>
+              </ion-thumbnail>
+              <ion-label *ngIf="user">
+                <ion-card-subtitle class="philosopher">Selamat datang,</ion-card-subtitle>
+                <ion-card-title class="philosopher">{{ user }}</ion-card-title>
+              </ion-label>
+            </ion-item>
+          </ion-card-header>
+
+          <ion-card-content>
+            <ion-grid class="roboto">
+              <ion-row *ngFor="let item of menu">
+                <ion-col class="square" *ngFor="let it of item">
+
+                  <ion-button class="butt" *ngIf="it.type === 'btn'" (click)="next(it.route)">
+                    <ion-label>
+                      <ion-icon name="{{ it.name }}" slot="start" src="{{ it.custom }}"></ion-icon>
+                      <div>{{ it.title }}</div>
+                    </ion-label>&nbsp;&nbsp;<div id="tit2">{{ it.title2 }}</div>
+                  </ion-button>
+
+                  <ion-button class="butt" *ngIf="it.type === 'lnk'" href="{{it.route}}">
+                    <ion-label>
+                      <ion-icon name="{{ it.name }}" slot="start"></ion-icon>
+                      <div>{{ it.title }}</div>
+                    </ion-label>&nbsp;&nbsp;<div id="tit2">{{ it.title2 }}</div>
+                  </ion-button>
+
+                </ion-col>
+              </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-lg="6" offset-lg="3" no-margin no-padding padding-top padding-start padding-end>
+        <ion-list>
+          <ion-list-header>
+            <ion-title id="ion-text-center" class="philosopher">Daftar Agenda</ion-title>
+          </ion-list-header>
+          <ion-item-group *ngFor="let item of newAgenda">
+            <ion-item-divider color="light">
+              <ion-label *ngIf="item.STATUS === '1'">Agenda Saat Ini</ion-label>
+              <ion-label *ngIf="item.STATUS === '0'">Agenda yang Akan Datang</ion-label>
+            </ion-item-divider>
+            <ion-item lines="none">
+              <ion-label>{{item.JUDUL_AGENDA}}</ion-label>
+            </ion-item>
+          </ion-item-group>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+</ion-content>

@@ -2,3 +2,16 @@
   max-height: 35vh;
   overflow: hidden;
 }
+ion-content{
+  --background: #fff url('../../assets/img/icon.png') no-repeat center center / cover;
+}
+
+ion-list {
+
+  &.list-ios {
+      margin-bottom: 1;
+  }
+  
+}
+
+

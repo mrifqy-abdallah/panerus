@@ -1,0 +1,1548 @@
+
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot='start'><ion-back-button defaultHref="/"></ion-back-button></ion-buttons>
+      <ion-title class="philosopher">Panduan Mahasiswa Baru</ion-title>
+    </ion-toolbar>
+    
+  </ion-header>
+  
+  <ion-content>
+        <ion-menu side="start" menuId="first" contentId="content1">
+            <ion-toolbar>
+              <ion-title>Daftar Isi</ion-title>
+            </ion-toolbar>
+            <ion-content>
+              <ion-list>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(2,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Deskripsi Kegiatan</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(3,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Timeline PKKMB</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(4,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Peraturan PKKMB</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(6,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Lagu Wajib Dihafal</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(12,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Materi PKKMB</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(13,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Sejarah UNS</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(15,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Makna Logo UNS</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(18,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Peta UNS Wilayah Kentingan</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(19,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Materi Transformasi Menjadi Mahasiswa UNS</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(20,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Pengetahuan Kemahasiswaan</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(29,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Beasiswa</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(37,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Tips Menangani Homesick</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(39,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Materi Kepedulian Sosial</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(40,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>Self Awareness</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(41,0)' color='light' lines='none'>
+                    <ion-icon slot='start' name='md-arrow-dropright'></ion-icon><ion-icon slot='end' name='menu'></ion-icon><ion-label>How To Be Good Listener</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(42,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Ketentuan Pakaian</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+                <ion-menu-toggle>
+                <ion-item  (click)='ScrollToPoint(53,0)' color='light' lines='none'>
+                    <ion-icon slot='end' name='menu'></ion-icon><ion-label>Ketentuan Barang Bawaan</ion-label>
+                </ion-item>
+                </ion-menu-toggle>
+              </ion-list>
+            </ion-content>
+        </ion-menu>
+  
+  
+  
+  
+  
+        <ion-router-outlet id="content1"></ion-router-outlet>      
+        
+        <ion-slides  pager='true' direction='vertical' #slides (ionSlideDidChange)="slideChanged()" scrollbar="true">
+           
+            <ion-slide>
+                <ion-content  #content [scrollEvents]='true'> 
+                  <ion-fab vertical="top" horizontal="end" slot="fixed">
+                    <ion-fab-button >
+                      <ion-menu-button><ion-icon name='menu' (click)='firstUse()'></ion-icon></ion-menu-button>
+                    </ion-fab-button>
+                  </ion-fab>
+                  <ion-card style=' margin-left : 0vw; margin-top : 0vw; margin-right : 0vw; margin-bottom : 0vw; margin-inline-start: 0vw; margin-inline-end: 0vw; padding-left : 0vw; padding-top : 0vw; padding-right : 0vw; padding-bottom : 0vw;'>
+                    <ion-card-content style='margin-left : 0vw; margin-top : 0vw; margin-right : 0vw; margin-bottom : 0vw; margin-inline-start: 0vw; margin-inline-end: 0vw; padding-left : 0vw; padding-top : 0vw; padding-right : 0vw; padding-bottom : 0vw;'>
+                      <ion-list style=' margin-left : 0vw; margin-top : 0vw; margin-right : 0vw; margin-bottom : 0vw; margin-inline-start: 0vw; margin-inline-end: 0vw; padding-left : 0vw; padding-top : 0vw; padding-right : 0vw; padding-bottom : 0vw;'>
+  <!-- ION ITEM MABA 1 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            <img #maba1 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/1MABA.jpg" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 2 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba2 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                            <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 5vw; font-family : roboto;
+                              background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; font-weight: bold;'>DESKRIPSI KEGIATAN</p>
+                            </div>
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 3.6vw;'>
+                                Pengenalan Kehidupan Kampus Mahasiswa Baru 2019 ini dilaksanakan selama 6 hari pada bulan Agustus 2019. Di mana pada hari pertama merupakan acara Upacara Penyambutan Mahasiswa Baru yang bertempat di halaman Gedung Prakoso, kemudian dilanjutkan dengan penancapan bendera 11 Fakultas yang merupakan simbol dari Sinergi, Kesatria, Nagari. Acara dilanjutkan dengan kuliah umum dan penampilan dari Menwa.
+                              </p>
+                              <p style='font-size : 3.6vw; ' >
+                                Hari kedua dan ketiga dilaksanakan di masing-masing fakultas. Kemudian di hari keempat dan kelima akan dilaksanakan kegiatan penanaman nilai-nilai dalam PKKMB 2019. Pada hari keenam yang merupakan acara puncak, dilaksanakan Student Vaganza oleh seluruh mahasiswa baru bertempat di Stadion UNS. Rangkaian acara ini terdiri dari berbagai kegiatan, mulai dari sambutan oleh rektor, pembuatan formasi, kuliah umum, dan kegiatan lainnya yang bersifat pengenalan dan orientasi kampus.
+                              </p>
+              
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/1.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 3 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba3 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                            <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 5vw; font-family : roboto;
+                              background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; font-weight: bold;'>TIMELINE PKKMB</p>
+                            </div>
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify;  ' >
+                              <p style='font-size : 3.6vw; font-weight: bold; color : rgb(0,255,255)'>
+                                  6 Agustus - 9 Agustus 2019 SAMBARA UNIVERSITAS
+                              </p>
+                              <p style='font-size : 3.6vw;  '>
+                                  •	6 Agustus 2019 : Batas maksimal kumpul perdana Manggala dengan    kelompok Mahasiswa Baru
+                              </p>
+                              <p style='font-size : 3.6vw; '>
+                                  •	7 Agustus  2019 : Penyampaian Materi dari Manggala Universitas, Ice breaking, dan penugasan PKKMB UNS 2019 PURWABRATA.
+                              </p>
+                              <p style='font-size : 3.6vw; '>
+                                  •	8 Agustus 2019 : Pengumpulan penugasan PKKMB UNS 2019 PURWABRATA
+                              </p>
+                              <br>
+                              <p style='font-size : 3.6vw; font-weight: bold; color : rgb(0,255,255)'>
+                                  13 Agustus – 18 Agustus 2019 Purwabrata PKKMB UNS 2019
+                              </p>
+                              <p style='font-size : 3.6vw; '>
+                                  •	13 Agustus 2019	: Upacara Penyambutan Mahasiswa baru PKKMB Universitas
+                              </p>
+                              <p style='font-size : 3.6vw; '>
+                                  •	18 Agustus 2019	: Student Vaganza PKKMB
+                              </p>
+              
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/2.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 4 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba4 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                            <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 5vw; font-family : roboto;
+                              background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; font-weight: bold;'>PERATURAN PKKMB</p>
+                            </div>
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify;  ' >
+                              <p style='font-size : 3.6vw; font-weight: bold; color : rgb(0,255,255)'>
+                                  Tata Tertib
+                              </p>
+                              <p style='font-size : 3.6vw;  text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB datang dalam kegiatan PKKMB UNS 2019
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB datang tepat waktu sesuai jadwal yang telah ditentukan.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB mengerjakan tugas PKKMB yang diberikan oleh panitia PKKMB dengan baik dan sungguh-sungguh.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa baru DILARANG membawa senjata tajam, rokok, dan obat-obatan terlarang.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB membawa botol minuman sendiri pada saat kegiatan PKKMB UNS 2019 pada hari ke-1.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru tidak diperbolehkan membawa kendaraan bermotor.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru DILARANG membawa tas di hari keenam, kecuali membawa tas kecil dengan panjang maksimal 30cm.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru hanya diperbolehkan membawa hp dan uang secukupnya serta barang lain yang dirasakan sangat urgent untuk digunakan.
+                              </p>
+                              
+                              
+              
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/3.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 5 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba5 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify;  ' >
+                              
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa diusahakan membawa Masker.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru DILARANG KERAS membuang sampah sembarangan.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB membersihkan sisa makanannya sendiri.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB mengenal satu sama lain. 
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa baru WAJIB menerapkan 5S (Senyum, salam, sapa, sopan, dan santun) kepada seluruh civitas academica UNS.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB berpakaian sopan sesuai dengan tingkat kesopanan menurut fakultas masing-masing dan peraturan yang berlaku.
+                              </p>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  •	Mahasiswa Baru WAJIB mengikuti peraturan yang ada dan bersedia menanggung sanksi dari fakultas masing-masing yang diberikan jika melanggar.
+                              </p>
+                              <br>
+                              <p style='font-size : 3.6vw; text-indent : 0;'>
+                                  <i>Semua tata tertib masih mengikuti ketentuan tambahan sesuai peraturan masing-masing fakultas</i>
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/4.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 6 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba6 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 5vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>LAGU WAJIB DIHAFAL</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                <p style='font-size : 3.6vw; text-indent: 5vw; '>
+                                  Lagu wajib untuk mahasiswa baru terdiri dari 4 lagu yaitu Indonesia Raya 3 Stanza, Mars UNS, HIMNE UNS, dan Mars Mahasiswa. Kewajiban mahasiswa baru untuk menghafal lagu-lagu tersebut memiliki tujuan agar mahasiswa bisa memiliki rasa kepemilikan dan kebanggan terhadap UNS. Karena sifatnya yang seperti itu diharapkan Mahasiswa baru menghafalkan lagu tersebut.
+                                </p>
+                                <br>
+                              
+                                <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold; text-decoration : underline;'>LAGU INDONESIA RAYA 3 STANZA</p>
+                                <br>
+                                <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold;'>Stanza 1</p>
+                                <br>
+                                <div style='text-align : left; font-size : 3.6vw;'>
+                                        <p>Indonesia tanah airku, tanah tumpah darahku</p>
+                                        <p>Di sanalah aku berdiri, jadi pandu ibuku</p>
+                                        <p>Indonesia kebangsaanku, bangsa dan tanah airku</p>
+                                        <p>Marilah kita berseru Indonesia bersatu</p>
+                                        <p>Hiduplah tanahku, hiduplah negeriku</p>
+                                        
+                                </div>
+                                        
+                                  
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/5.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 7 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba7 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                
+                                <div style='text-align : left; font-size : 3.6vw;'>
+                                        
+                                        <p>Bangsaku, rakyatku, semuanya</p>
+                                        <p>Bangunlah jiwanya, bangunlah badannya</p>
+                                        <p>Untuk Indonesia Raya</p>
+                                        <p>Indonesia Raya, merdeka merdeka</p>
+                                        <p>Tanahku, negeriku yang kucinta</p>
+                                        <p>Indonesia Raya, merdeka merdeka</p>
+                                        <p>Hiduplah Indonesia Raya</p>
+  
+                                </div>
+                                <br>
+                                <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold;'>Stanza 2</p>
+                                <br>
+                                <div style='text-align : left; font-size : 3.6vw;'>
+                                          
+                                    <p>Indonesia tanah yang mulia, tanah kita yang kaya</p>
+                                    <p>Di sanalah aku berdiri, untuk selama-lamanya</p>
+                                    <p>Indonesia tanah pusaka, pusaka kita semuanya</p>
+                                    <p>Marilah kita mendoa Indonesia bahagia</p>
+                                    <p>Suburlah tanahnya, suburlah jiwanya</p>
+                                    <p>Bangsanya, rakyatnya, semuanya</p>
+                                    <p>Sadarlah hatinya, sadarlah budinya</p>
+                                    <p>Untuk Indonesia Raya</p>
+                                    <p>Indonesia Raya, merdeka merdeka</p>
+                                    <p>tanahku, negeriku yang kucinta</p>
+                                    
+  
+                                </div>    
+                                  
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/6.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 8 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba8 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                
+                                  <div style='text-align : left; font-size : 3.6vw;'>
+                                      <p>Indonesia Raya, merdeka merdeka</p>
+                                      <p>Hiduplah Indonesia Raya</p>
+    
+                                  </div>    
+                                <br> 
+                                <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold;'>Stanza 3</p>
+                                <br>
+                                <div style='text-align : left; font-size : 3.6vw;'>
+                                          
+                                    <p>Indonesia tanah yang suci, tanah kita yang sakti</p>
+                                    <p>Di sanalah aku berdiri, menjaga ibu sejati</p>
+                                    <p>Indonesia tanah berseri, tanah yang aku sayangi</p>
+                                    <p>Marilah kita berjanji, Indonesia abadi</p>
+                                    <p>Slamatkan rakyatnya, slamatkan puteranya</p>
+                                    <p>Pulaunya, lautnya, semuanya</p>
+                                    <p>Majulah negerinya, majulah pandunya untuk Indonesia Raya</p>
+                                    <p>Indonesia Raya, merdeka merdeka</p>
+                                    <p>Tanahku, negeriku, yang kucinta</p>
+                                    <p>Indonesia Raya, merdeka merdeka</p>
+                                    <p>Hiduplah Indonesia Raya</p>
+  
+  
+                                </div>    
+                                <br>
+                                
+                                  
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/7.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 9 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                              <div style='width : 100vw; height : 141vw; background : black; '>
+                                
+                                <img #maba9 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold; text-decoration : underline;'>MARS UNS</p>
+                                <br>
+                                <div style='text-align : left; font-size : 3.6vw;'>
+                                          
+                                    <p>Universitas Sebelas Maret kami</p>
+                                    <p>Mengemban tugas luhur dan suci</p>
+                                    <p>(mengemban tugas suci)</p>
+                                    <p>Universitas Sebelas Maret Kami</p>
+                                    <p>Di bawah panji Pancasila</p>
+                                    <p>Di dalam kiprahnya tri dharma pedomannya</p>
+                                    <p>dengan tempaan semangat yang membaja</p> 
+                                      <p>Demi keagungan dan keluhuran</p>
+                                      <p>Almamater Sebelas Maret, </p>
+                                      <p>almamater tercinta</p>
+                                      <p>Universitas Sebelas Maret kami</p>
+                                      <p>Teguh tegakkan langkah mu</p>
+                                      <p>(tegakkan langkah mu)</p>
+                                      <p>Universitas Sebelas Maret kami</p>
+                                      <p>Semoga jaya selama-lamanya.</p>
+                                  </div> 
+                                  <br>
+                                  
+                                  </div>
+                                <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/8.png" tappable >
+                              </div>
+                            </ion-item>
+  <!-- ION ITEM MABA 10 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                            <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                              <div style='width : 100vw; height : 141vw; background : black; '>
+                                
+                                <img #maba10 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                    <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold; text-decoration : underline;'>HYMNE UNS</p>
+                                    <br>
+                                    <div style='text-align : left; font-size : 3.6vw;'>   
+                                        <p>Universitas Sebelas Maret kami</p>
+                                        <p>Kami akan selalu berbakti</p>
+                                        <p>Universitas Sebelas Maret Kami</p>
+                                        <p>Diluhurkan lah, namamu</p>
+                                        <p>Pancasila serta Tri Dharma menjadi dasar landasannya</p>
+                                        <p>Semoga jaya, semoga abadi</p>
+                                        <p>Almamater kami tercinta</p>
+                                    </div>
+                                    <br>
+                                  <p style='font-size : 3.6vw; width:100%; text-align : center; font-weight: bold; text-decoration : underline;'>MARS MAHASISWA</p>
+                                  <br>
+                                  <div style='text-align : left; font-size : 3.6vw;'>   
+                                       
+                                      <p>Kepada para mahasiswa </p>
+                                      <p>Yang merindukan kejayaan  </p>
+                                      <p>Kepada rakyat yang kebingungan </p> 
+                                      <p>Di persimpangan jalan </p>
+                                      <p>Kepada pewaris peradaban</p>  
+                                      
+                                      
+                                  </div>
+                                  
+                                  </div>
+                                <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/9.png" tappable >
+                              </div>
+                            </ion-item>
+  <!-- ION ITEM MABA 11 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                            <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                              <div style='width : 100vw; height : 141vw; background : black; '>
+                                
+                                <img #maba11 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; ' >
+                                    
+                                  <div style='text-align : left; font-size : 3.6vw;'>   
+                                      
+                                      <p>Yang telah menggoreskan </p> 
+                                      <p>Sebuah catatan kebanggaan </p> 
+                                      <p>Di lembar sejarah manusia </p>
+                                      <p>Wahai kalian yang rindu kemenangan </p>
+                                      <p>Wahai kalian yang turun ke jalan </p>
+                                      <p>Demi mempersembahkan jiwa dan raga </p>
+                                      <p>Untuk negeri tercinta</p>
+  
+                                  </div>
+                                  <br>
+                                  <p style='font-size : 3.6vw; text-align: justify; text-indent: 5vw'>Semua ketentuan lagu wajib hafal masih mengikuti ketentuan tambahan sesuai peraturan masing-masing fakultas</p>
+                                  </div>
+                                <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/10.png" tappable >
+                              </div>
+  
+                            </ion-item>
+  <!-- ION ITEM MABA 12 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                            <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba12 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style=' background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; display: flex!important;
+       
+       align-items: center!important; font-size : 7vw; width : 100%; height : 100%; text-align : center; font-weight: bold; '>
+                                MATERI PKKMB
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/11.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 13 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba13 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                            <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 5vw; font-family : roboto;
+                              background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; font-weight: bold;'>Sejarah UNS</p>
+                            </div>
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 3.6vw;'>
+                                  Tahun 1950-an, keinginan untuk mendirikan universitas negeri di Solo muncul. Namun universitas dambaan warga Solo tak kunjung terbentuk akibat berbagai faktor mulai  dari perang politik hingga finansial.
+                              </p>
+                              <p style='font-size : 3.6vw; ' >
+                                  Sepuluh tahun berlalu, tepatnya tahun 1966, harapan warga surakarta untuk memiliki universitas negeri mulai tampak nyata ketika Universitas Nasional Saraswati mengajukan diri menjadi universitas negeri. 
+                              </p>
+                              <p style='font-size : 3.6vw; ' >
+                                  Menindak lanjuti keinginan Universitas Negeri Saraswati untuk menjadi universitas negeri, pada 1 Juni 1975, universitas swasta dan kedinasan di solo raya bersatu membentuk Universitas Gabungan Surakarta (UGS).
+                              </p>
+                              <p style='font-size : 3.6vw; ' >
+                                  11 Maret 1976, Menteri pendidikan dan kebudayaan memastikan UGS akan di negerikan. Selanjutnya UGS akan digabung dengan perguruan tinggi negeri dan swasta lain untuk membentuk universitas negeri di Solo. Gabungan antara UGS dengan perguruan tinggi negeri dan swasta inilah yang menjadi cikal bakal terbentuknya UNS.
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/12.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 14 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            <img #maba14 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style='font-size : 3.6vw; ' >
+                                  11 Maret 1976, Universitas Negeri Surakarta Sebelas Maret resmi berdiri dan sejak tahun 1977, UNS memiliki kampus induk terpadu di Kentingan, Jebres, Surakarta seluas + 60 ha. Dalam perkembangannya, pada tahun 1982 nama dan singkatan Universitas Negeri Surakarta Sebelas Maret Surakarta (UNS Sebelas Maret), ditetapkan menjadi Universitas Sebelas Maret yang disingkat UNS.
+                              </p>
+                              <p style='font-size : 3.6vw; ' >
+                                  Universitas Sebelas Maret awalnya memiliki 9 fakultas, yaitu Fakultas Ilmu Pendidikan, Fakultas Keguruan, Fakultas Sastera Budaya, Fakultas Sosial Politik, Fakultas Hukum, Fakultas Ekonomi, Fakultas Kedokteran, Fakultas Pertanian serta Fakultas Teknik.
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/13.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 15 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba15 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 5vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>Makna Logo UNS</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <div style=' width : 100%; height : 40vw; '>
+                                    <ion-grid>
+                                        <ion-row>
+                                          <ion-col text-center size="6" offset="3">
+                                              <img #maba2 style='height : 40vw; width: 40vw; ' src="assets/img/uns-logo.png" tappable >
+                                          </ion-col>
+                                        </ion-row>
+                                    </ion-grid>
+                                    
+                                </div>
+                                <br>
+                                <p style='font-size : 3.6vw;'>
+                                    bunga dengan 4 daun bunga sebagai visualisasi bangsa, yang berarti pendidikan putra-putri bangsa yang kelak akan mengharumkan nama bangsa & negara, 
+                                  
+                                </p>
+                                <p style='font-size : 3.6vw; '>
+                                 
+                                    Tiga daun bunga merupakan pengejawantahan Tri Dharma Perguruan Tinggi, dan gerigi yang berujung lima pada daun bunga di bawah merupakan lambang kelima sila dari Pancasila; garis tepi yang tidak terputus-putus merupakan gambaran dari kesatuan dan persatuan warga Universitas.
+                                </p>
+                                
+                                
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/14.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 16 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba16 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                  <p style='font-size : 3.6vw; ' >
+                                      Bentuk kepala putik bunga digambarkan sebagai Wiku yang berasal dari bahasa Pali , yang kurang lebih bermakna orang yang berilmu. Wiku dengan nyala api di pusat wajahnya  melambangkan pancaran pikiran yang penuh kebijaksanaan, kearifan dan keluhuran budi serta sinar keabadian ilmu pengetahuan.
+                                  </p>
+                                  <p style='font-size : 3.6vw; ' >
+                                      Rangkaian kata yang melingkar merupakan candra sengkala yang masing-masing mengandung makna: mangesthi berarti angka 8, luhur berarti angka 0, ambangun berarti angka 9, dan nagara berarti angka 1; dengan dibaca dari belakang menunjukkan angka 1908, yaitu tahun Jawa ketika berdirinya Universitas  pada tahun masehi 1976; praba yang melingkar dan bersinar melambangkan pancaran kesucian dan keluhuran budi.
+                                  </p>
+                                  <p style='font-size : 3.6vw; ' >
+                                      Kesatuan hal-hal tersebut berada di dalam lingkaran yang bertuliskan Universitas Sebelas Maret dan singkatan UNS. Warna biru langit melambangkan ikrar kesetiaan dan kebaktian kepada Negara, Bangsa dan Ilmu Pengetahuan.
+                                  </p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/15.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 17 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba17 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                              
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                  <p style='font-size : 3.6vw; ' >
+                                      Secara keseluruhan lambang UNS memvisualisasikan cita-cita luhurnya untuk membangun bangsa, Candra Sangkala itu seolah Praba yang bersinar, Praba dalam sejarah agama & pewayangan dipakai oleh orang suci, bijaksana dan berbudi luhur. Pusat lambang itu adalah otak Wiku (orang yang berilmu) yang digambarkan sebagai nyala api, mengisyaratkan sinar keabadian ilmu pengetahuan yang menerangi menuju pensejahteraan manusia. Warna biru laut merupakan ikrar kesetiaan dan kebaktian terhadap bangsa, negara, tanah air dan ilmu pengetahuan.
+                                  </p>
+                                  
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/16.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 18 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba18 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/MAP.jpg" tappable >
+                              
+                              <div style='width: 100%; height : 100%; padding-top : 100vw; padding-bottom : 10vw; padding-left : 2vw; padding-right : 2vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              
+                                <p style='font-size : 3.6vw; text-indent : 0;'>Selain UNS kentingan ada juga :</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>1.	Kampus Pabelan (FKIP )</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>2.	Kampus Mesen (FSRD)</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>3.	Kampus UNS Kebumen (PGSD Kebumen)</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>4.	Kampus UNS Kleco (PGSD Surakarta dan PG PAUD)</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>5.	Kampus UNS Ngoresan (P.Bahasa Jawa dan P.Seni Rupa)</p>
+                                <p style='font-size : 3.6vw; text-indent : 0;'>6.	Kampus Manahan (FKOR)</p>
+  
+                                
+                                
+                       
+                                
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/17.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 19 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                            <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba19 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style=' background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; display: flex!important;
+       
+       align-items: center!important; font-size : 7vw; width : 100%; height : 100%; font-weight: bold; '>
+                                MATERI TRANSFORMASI MENJADI MAHASISWA UNS
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/18.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 20 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba20 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>PENGETAHUAN KEMAHASISWAAN</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                               
+                                
+                                <p style='font-size : 3.6vw; text-indent:0;'>
+                                    Apa saja yaa yang bisa dilakukan Mahasiswa, selain Kuliah? 
+                                </p>
+                              
+                                  <ul>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Kupu-kupu (Kuliah-pulang-Kuliah-pulang) itu hanya sebutan untuk mahasiswa yang setelah kuliah langsung pulang ke rumah/ke kosan.</li>
+                                      
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Kura-kura (Kuliah-rapat-kuliah-rapat) sebutan bagi para aktivis yang dengan banyaknya jadwal rapat, baik diorganisasi, kepanitian dan sebagainya.</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Kuker (Kuliah-kerja-kuliah-kerja) sebutan bagi mahasiswa yang mandiri banget nih, biasanya setelah kuliah bisa part time, lumayan untuk tambahan uang jajan hehe.</li>
+                                  </ul>
+                                
+                                <p style='font-size : 3.6vw; text-indent:0;'>
+                                    So let’s gooooo :
+                                </p>
+                                <ul>
+                                    <li style='font-size : 3.6vw; text-indent:0;'>Organisasi dan Kepanitiaan</li>
+                                    <p style='font-size : 3.6vw;'>
+                                        Sebagai mahasiswa selain berada di bangku perkuliahan, kita perlu belajar terkait softskill guna menunjang kemampuan akademik kita di bangku perkuliahan.
+                                    </p>
+                                  
+                                </ul>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/19.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 21 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba21 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                              
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                  <ul>
+                                      <p style='font-size : 3.6vw;'>
+                                          Mahasiswa akan menghadapi dunia kerja setelah ia lulus dari perguruan tinggi. Hal yang paling dibutuhkan pada saat itu adalah kemampuan mahasiswa dalam hard skill dan soft skill. Hasil penelitian menunjukkan bahwa soft skill merupakan yang menentukan kesuksesan seseorang dalam kepemimpinan suatu bisnis. Arnata dan Surjosepuo (2014), mengemukakan bahwa di Harvard University Amerika Serikat dijetahui bahwa 20% kesuksesan seseorang diperkirakan berasal dari intelegensia yaitu kemampuan untuk belajar dan memahami. Sementara itu, 80% sisanya berasal dari kemampuan untuk memahami diri sendiri dan berinteraksi dengan orang lain.
+                                      </p>
+                                      <p style='font-size : 3.6vw;'>
+                                          Keaktifan dalam organisasi memberikan pengaruh positif kepada anggotanya. Berdasarkan hasil penelitian yang dilakukan oleh Cahyaningtyas (2010, h.48)
+                                      </p>
+                                    </ul>
+                                
+                                
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/20.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 22 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                              <div style='width : 100vw; height : 141vw; background : black; '>
+                                
+                                <img #maba22 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                
+                                <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                    <ul>
+                                        
+                                        <p style='font-size : 3.6vw; text-indent:0;'>
+                                            diketahui bahwa ada manfaat dari keikutsertaan dalam organsisasi kemahasiswaan. Pendapat senada juga ditunjukkan oleh hasil penelitian yang dilakukan oleh Huang dan Chang (2004, h.391). Mereka menjelaskan bahwa mahasiswa yang aktif dalam kegiatan akademik dan kokulikuler memiliki manfaat dalam penguatan kemampuan berfikir, kemampuan komunikasi, kemampuan interpersonal, dan kepercayaan diri.
+                                        </p>
+                                        <p style='font-size : 3.6vw;'>
+                                            Berikut penjelasan mengenai Organisasi dan kepanitiaan :
+                                        </p>
+                                        <ol>
+                                          <li style='font-size : 3.6vw; text-indent: 0;'>Organisasi</li>
+                                          <p style='font-size : 3.6vw;'>
+                                              Organisasi adalah tempat berkumpulnya orang-orang (manusia) yang memiliki minat, bakat, tujuan atau cita-cita yang sama. Selain itu ada asas manajmen organisasi POAC
+                                          </p>
+                                          
+                                        </ol>
+                                    </ul>
+                                  
+                                  
+                                </div>
+                                <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/21.png" tappable >
+                              </div>
+                            </ion-item>
+  <!-- ION ITEM MABA 23 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                            <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba23 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          <p style='font-size : 3.6vw; font-weight : bold'> POAC</p>
+                                          <ul type='square'>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Planning</li>
+                                            <p style='font-size : 3.6vw;'>
+                                                Planning meliputi pengaturan tujuan dan mencari cara bagaimana untuk mencapai tujuan tersebut. 
+                                            </p>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Organizing</li>
+                                            <p style='font-size : 3.6vw;'>
+                                                Organizing adalah proses dalam memastikan kebutuhan manusia dan fisik setiap sumber daya yang tersedia untuk menjalankan rencana dan mencapai tujuan yang berhubungan dengan organisasi.
+                                            </p>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Actuating</li>
+                                            <p style='font-size : 3.6vw;'>
+                                                Perencanaan dan pengorganisasian yang baik akan kurang berarti bila tidak diikuti dengan pelaksanaan kerja. 
+                                            </p>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Controlling</li>
+                                            <p style='font-size : 3.6vw;'>
+                                                Agar pekerjaan berjalan sesuai dengan visi, misi, aturan, dan program kerja maka dibutuhkan pengontrolan.
+                                            </p>
+                                          </ul>
+                                          
+                                      </ul>
+                                    
+                                    
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/22.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 24 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba24 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          
+                                          
+                                          <ol start='2'>
+                                            <p style='font-size : 3.6vw;'>
+                                                Ada banyak sekali organisasi di UNS, contohnya adalah BEM UNS, DEMA UNS, BEM/DEMA tiap fakultas, Himpunan Prodi, UKM universitas, UKM fakultas, Komunitas daerah atau yang biasa disebut dengan Komda, dan masih banyak lagi.
+                                            </p>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Kepanitian</li>
+                                            <ion-grid>
+                                              <ion-row>
+                                                <ion-col text-center size="6" offset="3">
+                                                    <div style='height : 30vw; width : 30vw; background-size : cover;'>
+                                                        <img  style='height : 100%; width: 100%; ' src="assets/img/teamwork.jpg" tappable >
+                                                    </div>
+                                                </ion-col>
+                                              </ion-row>
+                                            </ion-grid>
+                                            
+                                            <p style='font-size : 3.6vw;'>
+                                                Kepanitiaan adalah unsur pelaksana suatu kegiatan yang bersifat sementara - Kepanitian ini menjalankan program kerja organisasi
+                                            </p>
+                                            
+                                          </ol>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/23.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 25 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba25 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          
+                                          
+                                          <ol start='2'>
+                                    
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>
+                                                Pedoman dalam Penyusunan Kepanitiaan: 
+                                            </p>
+                                            <ul type='square'>
+                                              <li style='font-size : 3.6vw; text-indent : 0;'>Tentukan tujuan </li>
+                                              <li style='font-size : 3.6vw; text-indent : 0;'>Merincikan aktivitas sedetil mungkin </li>
+                                              <li style='font-size : 3.6vw; text-indent : 0;'>Mengecek semua aktivitas panitia dalam waktu yang bersamaan (pra dan hari H) </li>
+                                              <li style='font-size : 3.6vw; text-indent : 0;'>Selalu melakukan koordinasi</li>
+                                            </ul>
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>
+                                                Alur Kepanitiaan :
+                                            </p>
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>
+                                                Perencanaan - Pembentukan - Persiapan - Pelaksanaan - Evaluasi pembuatan laporan - Pembubaran panitia
+                                            </p>
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>
+                                                Beberapa Komponen dalam kepanitiaan :
+                                            </p>
+                                            <ul type='square'>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Ketua Pelaksana</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sekretaris</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Bendahara</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Acara</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Konsumsi</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Perlengkapan</li>
+                                                
+                                                
+                                            </ul>
+  
+                                          </ol>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/24.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 26 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba26 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          
+                                          
+                                          <ol start='2'>
+                                    
+                                            
+                                            <ul type='square'>
+                                               
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Publikasi</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Dokumentasi, Desain, Videografi</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Akotrans</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Sponsorship</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Dana Usaha</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Sie Humjin (humas dan perizinan)</li>
+                                                <li style='font-size : 3.6vw; text-indent : 0;'>Dan lain lain (disesuaikan dengan kebutuhan acara kepanitiaan tersebut)</li>
+                                            </ul>
+                                            <br>
+                                            <p style='font-size : 3.6vw; '>
+                                                Contoh kepanitiaan di UNS misalnya PKKMB UNS, Olympus, Acara Seminar Nasional, dan masih banyak lagi
+                                            </p>
+                                            <p style='font-size : 3.6vw;'>
+                                                Jadi untuk perbedaan organisasi dengan kepanitiaan adalah pada jangka waktunya. Pada organisasi biasanya satu periode kepengurusan (waktu yg telah ditentukan, misal 1 tahun, 5 tahun) 
+  
+                                            </p>
+  
+                                          </ol>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/25.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 27 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba27 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          
+                                          
+                                          <ol start='2'>
+                                    
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>
+                                                tetapi untuk kepanitiaan jangka waktunya cenderung tidak lama (hanya dari pembentukan hingga pembubaran, dan relatih jangka waktunya lebih pendek dari organisasi)
+                                                Baik organisasi maupun kepanitiaan keduanya merupakan kegiatan positif bagi mahasiswa dalam mengembangkan softskillnya.
+                                            </p>
+                                            <p style='font-size : 3.6vw;'>
+                                                Pengalaman berorganisasai dapat membentuk soft skill mahasiswa
+                                                Manfaat yang didapatkan diorganisasi yaitu diantaranya membantumeningkatkan leadership, communication skill, teamwork, memperluas jaringan atau networking, problem solving dan memanajemen konflik.                                              
+                                            </p>
+  
+                                          </ol>
+  
+                                          
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/26.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 28 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba28 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          <li style='font-size : 3.6vw; text-indent : 0;'>
+                                              Kerja Part time
+                                          </li>
+                                          <p style='font-size : 3.6vw; '>
+                                              Bagi para mahasiswa yang ingin mendapatkan tambahan uang saku, kerja part time adalah solusinya. Manajemen waktu antara kuliah dan kerja bagi sebagian besar orang sangat susah. Tetapi dari situlah kita akan belajar bagaimana cara memanajemen waktu. Contoh kerja partime yang bisa dilakukan mahasiswa yaitu Pegawai warung makan, Kasir di toko, Guru privat SD/SMP/SMA, dll
+                                          </p>
+                                          <li style='font-size : 3.6vw; text-indent : 0;'>
+                                              Kegiatan Exchange
+                                          </li>
+                                          <p style='font-size : 3.6vw; '>
+                                              Kegiatan exchange di UNS dinaungi oleh organisasi bernama AISEC UNS, SEF UNS, dan UKM tiap fakultas yang bergerak pada bidang exchange seperti IAAS UNS untuk fakultas pertanian . Mendapatkan pengalaman international exposure adalah hal yang didambakan oleh semua mahasiswa. Salah satu contohnya yaitu AIESEC Universitas Sebelas Maret (UNS) 
+                                              Surakarta menyediakan alternatif bagi 
+                                          </p>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/27.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 29 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba29 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                          
+                                          <p style='font-size : 3.6vw; text-indent : 0;'>
+                                               mahasiswa yang ingin mendapatkan pengalaman tersebut melalui program Global Volunteer. Program yang diadakan organisasi kepemudaan terbesar di dunia ini rutin diadakan dua kali dalam setahun yaitu pada winter (akhir tahun) dan summer (pertengahan tahun).
+                                          </p>
+                                          <li style='font-size : 3.6vw; text-indent : 0;'>
+                                              Beasiswa
+                                          </li>
+                                          <p style='font-size : 3.6vw; '>
+                                              Pendidikan adalah hak segala bangsa, tetapi terkadang masih kita dengar beberapa anak indonesia tak melanjutkan pendidikannya di perguruan tinggi karena terkendala masalah ekonomi. Untuk itu,  beasiswa hadir bagi mereka yang memiliki keinginan untuk mencari ilmu di universitas namun terkendala masalah pembiayaan.
+                                         </p>
+                                         <p style='font-size : 3.6vw; '>
+                                            Di UNS sendiri ada berbagai macam beasiswa yang ditawarkan kepada para mahasiswanya. Beasiswa tersebut datang baik dari pemerintah maupun yayasan/lembaga donor yang lain. Ada 4 
+                                         </p>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/28.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 30 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba30 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                      
+                                         <p style='font-size : 3.6vw; text-indent : 0;'>
+                                            lembaga donor yang kerap kali memberikan beasiswa di UNS, mereka adalah:
+                                         </p>
+                                         <ol>
+                                           <li style='font-size : 3.6vw; text-indent : 0;'>Dikti</li>
+                                           <li style='font-size : 3.6vw; text-indent : 0;'>Perusahaan Djarum</li>
+                                           <li style='font-size : 3.6vw; text-indent : 0;'>Yayasan Sampoerna</li>
+                                           <li style='font-size : 3.6vw; text-indent : 0;'>Yayasan Supersemar</li>
+                                         </ol>
+  
+                                         <p style='font-size : 3.6vw; '>
+                                            Selain itu beberapa perusahaan besar, seperti PT Wijaya Karya, Toyota Astra, CSR Pembangun Jaya,dan lain-lain tercatat sering memberikan beasiswa bagi mahasiswa di UNS. Berikut beberapa beasiswa yang ada di UNS baik dari pemerintah, yayasan, maupun perusahaan.
+                                         </p>
+                                         <ol>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Bidik Misi</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Peningkatan Prestasi Akademik (Beasiswa PPA)</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Bantuan Belajar Mahasiswa (BBM)</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Mahasiswa Tidak Mampu</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Cargill Global Scholars</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Bank Indonesia</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa CSR Pembangun Jaya</li>
+                                          </ol>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/29.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 31 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba31 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                         
+                                         <ol start='8'>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Pelayanan Kasih A&A Rakhmat</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Supersemar</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa PT Wijaya Karya</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>BBP-PPA</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Bank Indonesia</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Yayasan Hidup Bahagia</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Djarum</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Gudang Garam</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Propinsi Jateng</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Bank Mandiri</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa BTN</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa Pemerintah Daerah</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Beasiswa BNI</li>
+                                          </ol>
+                                          <p style='font-size : 3.6vw; '>
+                                              Lalu apa saja syarat-syarat umum yg harus dipenuhi untuk mendaftar pada beasiswa-beasiswa tersebut ? Jadi syarat-syarat umum yang harus dipenuhi ketika berniat untuk mendaftar pada beasiswa meliputi:
+                                           </p>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/30.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 32 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba32 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                         
+                                         <ol>
+                                            
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Nilai Indeks Prestasi (IPK) minimum 3.00. Mahasiswa yang memiliki Nilai Indeks Prestasi (IPK) lebih tinggi akan mendapatkan poin lebih untuk menerima beasiswa.</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Kemampuan berbahasa Inggris. Biasanya acuan yang dipakai adalah IELTS min. 6,5 atau TOEFL min. 500</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Batasan usia. Batasan usia yang ditetapkan berbeda-beda, namun untuk maksimal usia yaitu  sampai 35 tahun. Tetapi semuanya juga tergantung pada tingkatan beasiswa yang kita ingin inginkan, misalkan pasca sarjana dan doktor</li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Keadaan finansial. Kemampuan ekonomi seseorang juga turut memengaruhi layak tidaknya ia mendapatkan beasiswa. Tapi untuk mendapatkan beasiswa dengan alasan ini kamu juga harus memberi</li>
+                                            
+                                          </ol>
+                                          
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/31.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 33 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba33 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul>
+                                         
+                                         <ol start='5'>
+                                            <p style='font-size : 3.6vw; text-indent : 0;'>bukti-bukti otentik bahwa kamu berasal dari keluarga yang kurang mampu. Misalnya surat keterangan dari Pak RT/Lurah.</p>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Formulir aplikasi. Formulir harus diisi selengkap-lengkapnya, sebenar-benarnya dan  sejelas-jelasnya. Selain itu juga harus melampirkan dokumen-dokumen yang dibutuhkan. Biasanya di formulir ini juga ada essay mengenai alasan mengapa kamu pantas mendapatkan beasiswa tersebut atau topik lain yang ditentukan oleh pihak pemberi beasiswa                                            </li>
+                                            <li style='font-size : 3.6vw; text-indent : 0;'>Surat rekomendasi dari dosen. Surat rekomendasi yang baik akan menjadi poin lebih yang menunjukkan bahwa kamu layak mendapat beasiswa di mata para reviewer/penyeleksi beasiswa</li>
+                                          
+                                          </ol>
+                                          
+                                         
+                                          
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/32.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 34 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba34 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul> 
+                                          <p style='font-size : 3.6vw; text-indent : 0;'>Note !!</p>
+                                          <p style='font-size : 3.6vw; '>Masih ada persyaratan-persyaratan khusus lainnya yang berbeda pada setiap jenis beasiswa tergantung pada kebijakan pemberi beasiswa. Persyaratan-persyaratan umum ini menjadi basic/ dasar yang diberikan oleh pemberi beasiswa dan harus dipersiapkan dengan baik.
+                                          </p>
+                                          <br>
+                                          <p style='font-size : 3.6vw; text-indent : 0;'>Tips Mendapatkan Informasi Beasiswa</p>
+                                          <p style='font-size : 3.6vw;'>Tidak semua mahasiswa bisa mendapatkan beasiswa kendati syarat-syarat dasar tersebut sudah tepenuhi dan Indeks Prestasi Kumulatif (IPK) nya memenuhi syarat yakni minimal 3.00. Hal itu terjadi karena informasi tentang beasiswa disampaikan pada forum terbatas. Selain itu pengumumannya pun ditempel di tempat-tempat tertentu saja.
+                                              Keberhasilan mendapatkan beasiswa salah satunya adalah kecepatan dalam
+                                              
+                                          </p> 
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/33.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 35 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba35 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul> 
+                                          
+                                          <p style='font-size : 3.6vw; text-indent: 0;'>mendaftarkan diri. Semakin cepat kamu mendaftar, semakin besar peluang kamu untuk mendapatkan beasiswa itu. Berikut ini tips yang bisa kamu lakukan untuk bisa up-date info beasiswa: </p>
+  
+                                          <ol>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Perluas pergaulan kamu</li>
+                                            <p style='font-size : 3.6vw;'>Kamu bisa menjalin komunikasi dan relasi yang baik, khususnya dengan perwakilan mahasiswa ataupun karyawan kampus di bagian kemahasiswaan. Dengan menjalin relasi yang baik, kamu akan lebih cepat mendapatkan informasi tentang beasiswa.</p>
+                                            <li style='font-size : 3.6vw; text-indent: 0;'>Sering mengakses informasi melalui internet</li>
+                                            <p style='font-size : 3.6vw;'>UNS memiliki website khusus untuk informasi beasiswa. Websitenya adalah http://sibea.mawa.uns.ac.id</p>
+                                            
+                                          </ol>
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/34.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 36 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                                <div style='width : 100vw; height : 141vw; background : black; '>
+                                  
+                                  <img #maba36 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                                  
+                                  <div style='width: 100%; height : 100%; padding-top : 10vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                      <ul> 
+                                          
+                                          <p style='font-size : 3.6vw; text-indent: 0;'>mendaftarkan diri. Semakin cepat kamu mendaftar, semakin besar peluang kamu untuk mendapatkan beasiswa itu. Berikut ini tips yang bisa kamu lakukan untuk bisa up-date info beasiswa: </p>  
+                                          <p style='font-size : 3.6vw;'>Di website tersebut kamu bisa mendapatkan banyak sekali informasi tentang beasiswa yang baru maupun informasi pendaftaran beasiswa negeri  untuk gelombang berikutnya. Kamu juga bisa mengakses website resmi fakultas untuk mengetahui informasi beasiswa yang sesuai dengan disiplin ilmu kamu. Selain itu kamu juga dapat memantau media sosial BEM universitas dan juga BEM fakultas yang selalu memposting info-info tentang beasiswa.</p>
+                                          
+                                      </ul>
+                                  </div>
+                                  <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/35.png" tappable >
+                                </div>
+                              </ion-item>
+  <!-- ION ITEM MABA 37 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                              <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba37 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>TIPS MENANGANI HOMESICK</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                               
+                                
+                                <p style='font-size : 3.6vw; '>Homesick adalah perasaan rindu/kehilangan dengan hal-hal yang kita anggap familiar. Bisa itu berupa kehangatan keluarga, keakraban kawan lama, atau mungkin tempat-tempat berkesan di kampung halaman.</p>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Solusi mengatasi homesick:</p>
+                                <ol>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Agar homesick mereda, jaringlah teman sebanyak-banyaknya. Sehingga kamu tak terlampau sendiri.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bergabunglah dengan komunitas yang banyak kegiatan positifnya. Entah itu komunitas seni, sastra, ataupun olahraga. Selain ampuh meredakan rindu, juga mengasah kemampuan komunikasi dan meyalurkan bakat kita.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Main ke tempat-tempat indah di tanah rantau. Membuat kamu tak sia-sia jauh dari rumah.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Senasib sepenanggungan, merapatlah bersama kawan-kawan yang jauh dari tempat tinggal juga.</li>
+                                </ol>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/36.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 38 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba38 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'></p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                               
+                                
+                               
+                                <ol start='5'>   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Obat rindu paling ampuh adalah suara orang tua. Telponlah mereka..</li>
+                                </ol>
+                                <p style='font-size : 3.6vw; '>Nah, pentingnya kita mengetahui apa itu homesick, macam-macamnya, serta solusi-solusi menghadapinya adalah selain untuk diri kita sendiri, bisa juga untuk kita nasehati atau ingatkan kepada kawan kita yang mengalaminya.</p>
+                                <p style='font-size : 3.6vw; '>Walaupun homesick kadang membuat sedih, namun jangan sampai kita lupa dengan tujuan mulia kita, yaitu menuntut ilmu. Jangan terhanyut dengan masa lalu, tapi hadapkan wajah ke depan kita ciptakan masa depan yang cerah.</p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/37.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 39 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba39 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style=' background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; display: flex!important;
+       
+       align-items: center!important; font-size : 7vw; width : 100%; height : 100%; text-align : center; font-weight: bold; '>
+                               MATERI KEPEDULIAN SOSIAL
+                               (KESEHATAN MENTAL)                             
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/38.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 40 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba40 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>Self Awareness</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ol >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Membangun Self Awareness (Kesadaran diri) : mengenali/memahami diri sendiri sebelum mengenali orang lain.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mengamati orang lain : Reaksi terhadap komentar (menjadi pendengar yang akttif/benar benar mendengarkan orang yang berbicara dengan kita.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mengusahakan kesadaran diri : Meditasi atau berdialog dengan diri sendiri (untuk mengenali diri sendiri)</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Berlatih untuk memaafkan : termasuk memafkan diri sendiri, banyak hal yang dapat kita rasakan ketika kita mampu memaafkan & menanggalkan dendam. </li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Memanfaatkan penguatan afirmasi dan hipnoterapi : apabila terdapat masalah dalam diri kita sebaiknya tidak berlarut-larut dalam masalah, namun mencari apa yang masih bisa diperbaiki. Jika usaha ini tidak dapat dilakukan sebaiknya meminta bantuan pada pihak ahli dalam hal ini layanan psikologis untuk mendapatkan bantuan.</li>
+                                </ol>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/39.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 41 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba41 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>How to be Good Listener </p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ol >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Menempatkan diri sendiri diposisi orang lain</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mengenali emosi diri sendiri lebih dahulu agar dapat mengenali perasaan orang lain</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Menjadi pendengar yang aktif atau benar-benar mendengarkan orang yang berbicara dengan kita</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Parafrasa atau pengungkapan kembali ucapan lawan bicara agar mendapat pemahaman yang lebih baik</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mencerminkan kembali ucapan lawan bicara, dengan cara menunjukkan perasaan setelah mendengar cerita mereka</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mempelajari cerita-cerita dari orang lain, dengan itu setidaknya kita akan merasakan berada diposisi mereka</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Mencari kesamaan diri sendiri dengan orang lain</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Berbagi keluh dan kesah kepada orang lain</li>
+                                </ol>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Source : Kompasiana, (Menumbuhkan Social Awareness by Citra Widiya)</p>
+                              
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/40.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 42 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba42 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style=' background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; display: flex!important;
+       
+       align-items: center!important; font-size : 7vw; width : 100%; height : 100%; text-align : center; font-weight: bold; '>
+                               KETENTUAN PAKAIAN                          
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/41.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 43 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                        <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba43 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>HARI PERTAMA 13 AGUSTUS 2019</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ul >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Atasan: Kemeja panjang putih polos ( tidak ada corak sama sekali) lengkap dengan almamater UNS.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bawahan	: Rok panjang putih polos bagi perempuan dengan model     
+                                      bebas, celana panjang putih putih polos bagi laki-laki, lengkap dengan ikat pinggang berwarna hitam.</li>
+                                </ul>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Catatan</p>
+                                <ul>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi perempuan, rambut diikat agar rapi.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi perempuan yang berhijab menggunakan jilbab putih polos.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi perempuan yang mengenakan cadar diperbolehkan menggunakan masker atau cadar berwarna putih.</li>
+                                </ul>
+                                <p style='font-size : 3.6vw; '>Sepatu dominan hitam (Min. 75% hitam) dengan catatan ada corak sedikit tidak apa-apa.
+                                    Kaos kaki putih (Minimal diatas mata kaki). Pakaian sopan dan rapi, kemeja dan bawahan tidak ketat dan digulung.
+                                    </p>
+                               
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/42.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 44 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba44 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'></p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                
+                                <p style='font-size : 3.6vw; '>Semua ketentuan pakaian masih mengikuti ketentuan tambahan sesuai etika berpakaian dan tingkat kesopanan masing-masing fakultas</p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/43.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 45 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba45 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>HARI KEENAM 18 AGUSTUS 2019</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ul >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Atasan: Kaos putih polos agak tebal dengan ketentuan boleh bercorak                           
+                                      sebanyak 15%
+                                      </li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bawahan: Celana training panjang warna gelap atau rok panjang warna gelap, warna dongker mendekati hitam tidak apa-apa jika warna hitam tidak ada.
+                                      </li>
+                                </ul>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Catatan</p>
+                                <ul>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi perempuan yang berhijab mengenakan hijab polos.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi perempuan yang mengenakan cadar diperbolehkan menggunakan masker atau cadar berwarna hitam.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Bagi Mahasiswa Baru yang wajib mengenakan Pita sesuai dengan KTK (Klasifikasi tingkat Kesehatan) PKKMB UNS 2019 Sesuai ketentuan, pita wajib digunakan sesuai dengan ketentuan.</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Sepatu olahraga warna Bebas</li>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Pakaian sopan dan rapi, kaos dan bawahan tidak ketat.</li>
+                                </ul>
+                                
+                               
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/44.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 46 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba46 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'></p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                
+                                  <p style='font-size : 3.6vw; '>Semua ketentuan pakaian masih mengikuti ketentuan tambahan sesuai etika berpakaian dan tingkat kesopanan masing-masing fakultas</p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/45.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 47 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba47 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianlaki2.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/46.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 48 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba48 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianperempuan2.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/47.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 49 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba49 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianperempuanberjilbab2.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/48.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 50 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba50 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianlaki.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/49.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 51 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba51 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianperempuan.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/50.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 52 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba52 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/pakaianperempuanberjilbab.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/51.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 53 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                          <div style='width : 100vw; height : 141vw; background : black; '>
+                            
+                            <img #maba53 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL3.jpg" tappable >
+                            
+                            <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                              <p style=' background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                              -webkit-background-clip: text;
+                              -webkit-text-fill-color: transparent; display: flex!important;
+       
+       align-items: center!important; font-size : 7vw; width : 100%; height : 100%; text-align : center; font-weight: bold; '>
+                               KETENTUAN BARANG BAWAAN                        
+                              </p>
+                            </div>
+                            <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/52.png" tappable >
+                          </div>
+                        </ion-item>
+  <!-- ION ITEM MABA 54 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba54 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL1.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>HARI PERTAMA 13 AGUSTUS 2019</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ul >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Barang yang wajib dibawa oleh Mahasiswa Baru</li>
+                                  <ul type='square'>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Botol Minum berisi air min. 600 ml</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Alat tulis untuk kuliah umum</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Barang-barang wajib bawaan lain yang ditentukan oleh masing-masing fakultas.</li>
+                                  </ul>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Barang yang Tidak diperbolehkan dibawa oleh Mahasiswa Baru</li>
+                                  <ul type='square'>
+                                  
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Senjata tajam, rokok dan obat-obatan terlarang</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Barang-barang terlarang bawa lain yang ditentukan oleh masing-masing fakultas.  </li>
+                                  </ul>
+                                </ul>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Semua ketentuan barang bawaan masih mengikuti ketentuan tambahan sesuai etika pemakaian barang dan peraturan masing-masing fakultas.</p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/53.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 55 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              
+                              <img #maba55 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/HAL2.jpg" tappable >
+                              <div style='width: 100%; height : 100%; padding-top : 3vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <p style='font-size : 3.6vw; font-family : roboto;
+                                background: -webkit-linear-gradient(rgb(184, 230, 20), rgb(214, 211, 4));
+                                -webkit-background-clip: text;
+                                -webkit-text-fill-color: transparent; font-weight: bold;'>HARI KEENAM 18 AGUSTUS 2019</p>
+                              </div>
+                              <div style='width: 100%; height : 100%; padding-top : 15vw; padding-bottom : 10vw; padding-left : 10vw; padding-right : 10vw; position : absolute;  color : white; text-align : justify; text-indent: 5vw; ' >
+                                <ul >   
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Barang yang wajib dibawa oleh mahasiswa Baru:</li>
+                                  <ul type='square'>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Uang secukupnya</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Masker </li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>HP(Jika diperlukan)</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Jika membutuhkan tas, hanya diperbolehkan yang panjang maksimal 30cm.</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Alat sholat jika diperlukan yang dimasukkan kedalam tas kecil.</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Warna tas BEBAS</li>
+                                  </ul>
+                                  <li style='font-size : 3.6vw; text-indent:0;'>Barang yang tidak diperbolehkandibawa oleh Mahasiswa baru</li>
+                                  <ul type='square'>
+                                  
+                                      <li style='font-size : 3.6vw; text-indent:0;'>Senjata tajam, rokok dan obat-obatan terlarang</li>
+                                      <li style='font-size : 3.6vw; text-indent:0;'>o	Barang-barang yang dilarang lainnnya yang ditentukan oleh masing-masing fakultas</li>
+                                  </ul>
+                                </ul>
+                                <p style='font-size : 3.6vw; text-indent:0;'>Semua ketentuan barang bawaan masih mengikuti ketentuan tambahan sesuai etika pemakaian barang dan peraturan masing-masing fakultas</p>
+                              </div>
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/54.png" tappable >
+                            </div>
+                          </ion-item>
+  <!-- ION ITEM MABA 56 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+                          <ion-item style='--padding-start: 0;   --inner-padding-end: 0;'>
+                            <div style='width : 100vw; height : 141vw; background : black; '>
+                              <img #maba56 style='height : 100%; width: 100%; position : absolute; top : 0; left : 0;' src="assets/img/end.jpg" tappable >
+                              
+                              
+                              <img style='height : 10vw; width: 10vw; position : absolute; top : 131vw; left : 90vw;' src="assets/img/55.png" tappable >
+                            </div>
+                          </ion-item>
+                      </ion-list>
+                    </ion-card-content>
+                  </ion-card>
+                </ion-content>
+            </ion-slide>        
+        </ion-slides>
+        
+    
+      
+  </ion-content>
+  

@@ -1,0 +1,60 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-back-button slot="start" defaultHref="/"></ion-back-button>
+      <ion-title class="philosopher">
+        Grouping
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size-md="6" offset-md="3">
+  
+          <ion-card>
+            <ion-card-header color="light">
+              <ion-label>Kakak Pendamping</ion-label>
+            </ion-card-header>
+            <div *ngFor="let item of dataa; let i=index">
+              <ion-item *ngIf="i<2" lines="full">
+                <ion-thumbnail slot="start" margin-left margin-bottom>
+                  <ion-avatar>
+                    <img src="{{item.FOTO}}">
+                  </ion-avatar>
+                </ion-thumbnail>
+                <ion-label text-end>
+                  <ion-card-title>{{item.NAMA}}</ion-card-title>
+                  <ion-card-subtitle>{{item.PRODI}} ({{item.FAKULTAS}})</ion-card-subtitle>
+                </ion-label>
+              </ion-item>
+            </div>
+          </ion-card>
+  
+          <ion-card>
+            <ion-card-header color="light">
+              <ion-label>Peserta</ion-label>
+            </ion-card-header>
+            <div *ngFor="let it of dataa; let i=index">
+              <ion-item *ngIf="i>1">
+                <ion-thumbnail slot="end" margin-left margin-bottom>
+                  <ion-avatar>
+                    <img src="{{it.FOTO}}">
+                  </ion-avatar>
+                </ion-thumbnail>
+                <ion-icon slot="start" name="square-outline" *ngIf="it.ACTCODE !== '1'"></ion-icon>
+                <ion-icon slot="start" name="checkbox-outline" *ngIf="it.ACTCODE === '1'"></ion-icon>
+                <ion-label text-start>
+                  <ion-card-title>{{it.NAMA}}</ion-card-title>
+                  <ion-card-subtitle>{{it.PRODI}} ({{it.FAKULTAS}})</ion-card-subtitle>
+                </ion-label>
+              </ion-item>
+            </div>
+            <div *ngFor="let jum of dataa; let c=count; let i=index">
+              <ion-item *ngIf="i<1">Jumlah Seluruh Peserta : {{ c-2 }}</ion-item>
+            </div>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-content>
