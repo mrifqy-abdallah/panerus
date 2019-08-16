@@ -37,7 +37,7 @@ export class AppComponent {
         if (state) {
           this.router.navigate([''], {replaceUrl: true});
         } else {
-          this.router.navigate(['/login']);
+          this.router.navigate(['/landing']);
         }
       });
     });
