@@ -16,8 +16,8 @@
             <ion-card-header color="light">
               <ion-label>Kakak Pendamping</ion-label>
             </ion-card-header>
-            <div *ngFor="let item of dataa; let i=index">
-              <ion-item *ngIf="i<2" lines="full">
+            <div *ngFor="let item of dataa">
+              <ion-item *ngIf="item.ISKABIM === '1'" lines="full">
                 <ion-thumbnail slot="start" margin-left margin-bottom>
                   <ion-avatar>
                     <img src="{{item.FOTO}}">
@@ -35,8 +35,8 @@
             <ion-card-header color="light">
               <ion-label>Peserta</ion-label>
             </ion-card-header>
-            <div *ngFor="let it of dataa; let i=index">
-              <ion-item *ngIf="i>1">
+            <div *ngFor="let it of dataa">
+              <ion-item *ngIf="it.ISKABIM === '0'">
                 <ion-thumbnail slot="end" margin-left margin-bottom>
                   <ion-avatar>
                     <img src="{{it.FOTO}}">

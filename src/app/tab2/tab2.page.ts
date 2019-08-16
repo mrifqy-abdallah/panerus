@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { FCM } from '@ionic-native/fcm/ngx';
 import { Storage } from '@ionic/storage';
+import { IonSlides } from '@ionic/angular';
 
 const goToHttp = 'https://purwabarata2019.uns.ac.id/panerusApp/';
 let tipe = '';
@@ -15,6 +16,7 @@ let tipe = '';
 })
 export class Tab2Page {
   @ViewChild('content', {static: false}) private content: any;
+  @ViewChild(IonSlides, {static: false}) slides: IonSlides;
 
   user = '';
   img: any;
@@ -27,6 +29,8 @@ export class Tab2Page {
     slidesPreview: 1.6,
     loop: true,
     autoplay: true,
+    updateOnImageReady: true,
+    preventInteractionOnTransition: true,
   };
 
   menu = [
@@ -47,6 +51,12 @@ export class Tab2Page {
       { name: 'pin', title: 'Lokasi', route: 'https://www.google.com/maps/place/Universitas+Sebelas+Maret,+Jl.+Ir+Sutami+No.36+A,+Pucangsawit,+Kec.+Jebres,+Kota+Surakarta,+Jawa+Tengah+57126/@-7.5596031,110.8565448,17z/data=!4m2!3m1!1s0x2e7a14234667a3fd:0xbda63b32997616ad', type: 'lnk' }
     ]
   ];
+
+  swiped(event) {
+    this.sliderConf.autoplay = true;
+    this.sliderConf.loop = true;
+    this.slides.startAutoplay();
+  }
 
   getKabar() {
     const postData = JSON.stringify({kabar: 'all'});
@@ -134,18 +144,11 @@ export class Tab2Page {
 
   ionViewWillEnter() {
     this.content.scrollToTop(300);
-    this.sliderConf.autoplay = true;
-    this.sliderConf.loop = true;
   }
 
   ionViewDidEnter() {
     this.fire();
     this.getKabar();
-  }
-
-  ionViewDidLeave() {
-    this.sliderConf.autoplay = true;
-    this.sliderConf.loop = true;
   }
 
 }
