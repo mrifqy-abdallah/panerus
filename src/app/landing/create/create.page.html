@@ -1,0 +1,46 @@
+<ion-content>
+  <ion-grid style="height: 100%" text-center>
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-col size-md="6">
+
+        <form (ngSubmit)="onCreate(fff)" #fff=ngForm>
+          <ion-card color="light" padding>
+            <div text-justify>
+              <p>Silahkan buat Username dan Password untuk akunmu. Setelah ini status akunmu akan berubah menjadi
+                AKTIF.</p>
+              <p>Username dan Password ini yang nanti dipakai untuk login ya~</p>
+            </div>
+          </ion-card>
+
+          <ion-item>
+            <ion-input pattern="^\w.*$" type="text" placeholder="Username" required name="nameee" ngModel
+              #name="ngModel" minlength="7" maxlength="15"></ion-input>
+            <div style="color:red" *ngIf="name.errors && (name.dirty || name.touched)">
+              <p *ngIf="name.errors?.pattern; else space">jangan gunakan spasi!</p>
+              <ng-template #space>
+                <p>minimal 7 karakter!</p>
+              </ng-template>
+            </div>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Password" required name="passss" ngModel #name="ngModel"
+              minlength="7"></ion-input>
+            <div style="color:red" *ngIf="name.errors && (name.dirty || name.touched)">
+              <p *ngIf="name.errors?.minlength;">Minimal 7 karakter!</p>
+            </div>
+          </ion-item>
+          <ion-item>
+            <ion-input type="password" placeholder="Konfirmasi Password" required name="cpassss" ngModel></ion-input>
+          </ion-item>
+          <ion-button expand="block" type="submit">Buat Akun</ion-button>
+          <div text-center>
+            <p>nanti aja deh, kembali ke <a (click)="chng('landing')">halaman depan</a> dulu.</p>
+            <p>nb: tenang, akunmu bisa diaktivasi lain kali</p>
+          </div>
+        </form>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

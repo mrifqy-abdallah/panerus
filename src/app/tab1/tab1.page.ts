@@ -26,7 +26,7 @@ export class Tab1Page {
         return;
       });
       event.target.complete();
-    }, 5000);
+    }, 3000);
   }
 
   getKabarManual() {

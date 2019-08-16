@@ -1,0 +1,68 @@
+<ion-content>
+  <ion-grid no-margin no-padding>
+
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-back-button defaultHref="/"></ion-back-button>
+        </ion-buttons>
+        <ion-title class="philosopher">Profil Lengkap</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <ion-row margin-top>
+      <ion-col size-md="4" offset-md="4" size="6" offset="3">
+        <img src={{img}}>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col size-md="6" offset-md="3" no-padding>
+        <ion-card>
+          <ion-list>
+            <ion-item>
+              <ion-icon name="key" slot="start"></ion-icon>
+              <ion-label>
+                <h4 class="philosopher"><i>ID Pendaftaran</i></h4>
+                <h2>{{this.ide}}</h2>
+              </ion-label>
+
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="at" slot="start"></ion-icon>
+              <ion-label>
+                <h4 class="philosopher"><i>Username</i></h4>
+                <h2>{{this.user}}</h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="person" slot="start"></ion-icon>
+              <ion-label>
+                <h4 class="philosopher"><i>Nama Lengkap</i></h4>
+                <h2>{{this.namae}}</h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="book" slot="start"></ion-icon>
+              <ion-label>
+                <h4 class="philosopher"><i>Program Studi</i></h4>
+                <h2>{{this.prodie}}</h2>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="list-box" slot="start"></ion-icon>
+              <ion-label>
+                <h4 class="philosopher"><i>Fakultas</i></h4>
+                <h2>{{this.fakultase}}</h2>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

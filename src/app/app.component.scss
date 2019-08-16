@@ -1,11 +1,3 @@
-// App Styles
-// ----------------------------------------------------------------------------
-// Put style rules here that you want to apply to the entire application. These 
-// styles are for the entire app and not just one component. Additionally, this 
-// file can hold Sass mixins, functions, and placeholder classes to be imported 
-// and used throughout the application.
-
-
 @font-face {
   font-family: 'sanspro';
   src: url('../assets/font/sanspro.ttf');
@@ -23,44 +15,44 @@
 * ::-webkit-scrollbar {
     display: none;
   }
-body {
+:host ::ng-deep body {
     -webkit-user-select: text;
     user-select: text;
 }
 
-.jockey-one {
+:host ::ng-deep .jockey-one {
   color: #6670B1;
   font-family: 'Jockey One', sans-serif;
 }
-.malvie {
+:host ::ng-deep .malvie {
   color: #A45679;
   font-family: 'Malvie';
 }
-.philosopher {
+:host ::ng-deep .philosopher {
   color: black;
   font-family: 'Philosopher', sans-serif;
 }
-.philosopher-1 {
+:host ::ng-deep .philosopher-1 {
   color: white;
   font-family: 'Philosopher', sans-serif;
 }
-.roboto {
+:host ::ng-deep .roboto {
   font-family: 'Roboto Slab', serif;
   color: black;
 }
 
-.alcubierre {
+:host ::ng-deep .alcubierre {
   font-family: 'Alcubierre', sans-serif;
   color: black;
 }
 
-.yrsa {
+:host ::ng-deep .yrsa {
   font-family: 'Yrsa', serif;
   color: black;
 }
 
 
-#ion-text-center{
+:host ::ng-deep #ion-text-center{
 
   text-align: center;
 

@@ -26,7 +26,7 @@ export class Tab2Page {
     centeredSlides: true,
     slidesPreview: 1.6,
     loop: true,
-    autoplay: true
+    autoplay: true,
   };
 
   menu = [

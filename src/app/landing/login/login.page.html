@@ -1,0 +1,29 @@
+<ion-content>
+  <ion-grid style="height: 100%" text-center>
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      <ion-col size-md="6">
+
+          <form (ngSubmit)="onLogin(f)" #f=ngForm>
+            <img src="assets/icon/icon.png" height="200 px" width="150 px">
+            <ion-item margin-top>
+              <ion-icon name="person" slot="start"></ion-icon>
+              <ion-input type="text" clearInput="true" maxlength="15" placeholder="Username" required name="name"
+                ngModel></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-icon name="lock" slot="start"></ion-icon>
+              <ion-input type="password" clearInput="true" placeholder="Password" required name="pass" ngModel>
+              </ion-input>
+            </ion-item>
+            <ion-button type="submit" expand="block">login</ion-button>
+            <div text-center>
+              <p>Belum aktivasi? <a (click)="chng('landing/activate')">aktivasi akun</a> terlebih dahulu.</p>
+              <p>atau kembali ke <a (click)="chng('landing')">halaman depan</a></p>
+            </div>
+          </form>
+
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

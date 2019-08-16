@@ -10,8 +10,6 @@ import { Storage } from '@ionic/storage';
   styleUrls: ['tab3.page.scss']
 })
 export class Tab3Page {
-  define1 = 1;
-  define2 = 0;
   namae = '';
   ide = '';
   prodie = '';
@@ -30,24 +28,12 @@ export class Tab3Page {
   }
 
   logoutUser() {
-    this.getData(this.authService);
-    this.authService.logout();
+    this.getData(this.authService.logout());
   }
 
   next(para) {
     this.authService.isAuthenticated();
     this.router.navigate([para]);
-  }
-
-  Profil() {
-    this.define1 = 0;
-    this.define2 = 1;
-
-  }
-
-  tab3() {
-    this.define1 = 1;
-    this.define2 = 0;
   }
 
   constructor(
@@ -65,10 +51,5 @@ export class Tab3Page {
         this.img = res.FOTO;
       });
     }
-
-  ionViewDidLeave() {
-    this.define1 = 1;
-    this.define2 = 0;
-  }
 
 }

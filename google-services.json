@@ -1,0 +1,119 @@
+{
+  "project_info": {
+    "project_number": "191702450553",
+    "firebase_url": "https://panerusapp.firebaseio.com",
+    "project_id": "panerusapp",
+    "storage_bucket": "panerusapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702450553:android:5825162e3f2bfc7c",
+        "android_client_info": {
+          "package_name": "com.panerus.kabim.purwabrata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWN4QAcdS_oqL_LfkUNUXQtYNLaJhB8p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191702450553-2r4quh0fpi053h6o8jqok81hae2a8k1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panerus.kabim.purwabrata"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702450553:android:5fb40bd504349a39",
+        "android_client_info": {
+          "package_name": "com.panerus.purwabarata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWN4QAcdS_oqL_LfkUNUXQtYNLaJhB8p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191702450553-2r4quh0fpi053h6o8jqok81hae2a8k1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panerus.kabim.purwabrata"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191702450553:android:7b96da9927f6a41f",
+        "android_client_info": {
+          "package_name": "com.panerus.purwabrata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWN4QAcdS_oqL_LfkUNUXQtYNLaJhB8p0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191702450553-db83ia38tb3gcnkapehm7j82agvv3ovr.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "191702450553-2r4quh0fpi053h6o8jqok81hae2a8k1e.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panerus.kabim.purwabrata"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
