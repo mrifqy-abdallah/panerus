@@ -152,4 +152,9 @@ export class Tab2Page {
     this.getKabar();
   }
 
+  ionViewDidLeave() {
+    this.content.scrollToTop(300);
+    this.swiped(null);
+  }
+
 }
