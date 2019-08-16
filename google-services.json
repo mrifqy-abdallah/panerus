@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "891832301202",
+    "firebase_url": "https://panerusfix.firebaseio.com",
+    "project_id": "panerusfix",
+    "storage_bucket": "panerusfix.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:891832301202:android:5fb40bd504349a39",
+        "android_client_info": {
+          "package_name": "com.panerus.purwabarata"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "891832301202-8ot0sr0o5k99o0rmn8atbhq4ld1sq369.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDJPuTI96zcETOUCuJAOWYAGWDKAgx58g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "891832301202-8ot0sr0o5k99o0rmn8atbhq4ld1sq369.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
