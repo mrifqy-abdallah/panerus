@@ -14,7 +14,7 @@
 
           <ion-item>
             <ion-input pattern="^\w.*$" type="text" placeholder="Username" required name="nameee" ngModel
-              #name="ngModel" minlength="7" maxlength="15"></ion-input>
+              #name="ngModel" minlength="7"></ion-input>
             <div style="color:red" *ngIf="name.errors && (name.dirty || name.touched)">
               <p *ngIf="name.errors?.pattern; else space">jangan gunakan spasi!</p>
               <ng-template #space>

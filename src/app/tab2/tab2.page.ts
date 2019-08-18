@@ -133,16 +133,20 @@ export class Tab2Page {
     ) {
       this.getAds();
       this.getNewestAgenda();
-      this.storage.get('USER_INFO').then(res => {
-        this.user = res.UNAME;
-        this.img = res.FOTO;
-      });
       this.storage.get('USER_NEWAGENDA').then(res => {
         this.newAgenda = res;
       }, err => { });
     }
 
+  // tslint:disable-next-line: use-lifecycle-interface
+  ngOnInit() {
+  }
+
   ionViewWillEnter() {
+    this.storage.get('USER_INFO').then(res => {
+      this.user = res.UNAME;
+      this.img = res.FOTO;
+    });
     this.content.scrollToTop(300);
     this.swiped(null);
   }
